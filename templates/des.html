@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DES</title>
+</head>
+<body>
+    <h1>DES ALGORITHM</h1>
+    <br>
+    <p>Enter message and key here:</p>
+    <br>
+    <div>
+        <form method="POST" action="/cryptool/process_des">
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" required>
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key" required>
+
+            <input type="submit" value="Encrypt">
+        </form>
+        <div id="ciphertext">Secret message: {{ciphertext}}</div>
+    </div>
+    <br>
+
+    <br>
+    <a href="/">Go back to home</a>
+</body>
+</html>

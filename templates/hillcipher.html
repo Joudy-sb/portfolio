@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hill Cipher</title>
+</head>
+<body>
+    <h1>HILL CIPHER</h1>
+    <br>
+    <p>Enter message here:</p>
+    <br>
+    <div>
+        <form method="POST" action="/cryptool/process_hillcipherEN">
+            <label for="message">Plaintext:</label>
+            <input type="text" id="message" name="message" required>
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key" required>
+            <label for="mod">Mod:</label>
+            <input type="int" id="mod" name="mod" required>
+            <input type="submit" value="Encrypt">
+        </form>
+        <div id="ciphertext">Secret message: {{ciphertext}}</div>
+    </div>
+    <br>
+    <div>
+        <form method="POST" action="/cryptool/process_hillcipherDC">
+            <label for="message">Ciphertext:</label>
+            <input type="text" id="message" name="message" required>
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key" required>
+            <label for="mod">Mod:</label>
+            <input type="int" id="mod" name="mod" required>
+            <input type="submit" value="Decrypt">
+        </form>
+        <div id="plaintext">Plain text message: {{plaintext}}</div>
+    </div>
+    <br>
+    <a href="/cryptool">Go back to home</a>
+</body>
+</html>

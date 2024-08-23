@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayFair Cipher</title>
+</head>
+<body>
+    <h1>PLAYFAIR CIPHER</h1>
+    <br>
+    <p>Enter message here:</p>
+    <br>
+    <div>
+        <form method="POST" action="/cryptool/process_playfaircipherEC">
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" required>
+            <label for="key1">Key 1:</label>
+            <input type="text" id="key1" name="key1" required>
+            <label for="key2">Key 2:</label>
+            <input type="text" id="key2" name="key2" required>
+            <input type="submit" value="Encrypt">
+        </form>
+        <div id="ciphertext">Secret message: {{ciphertext}}</div>
+    </div>
+    <br>
+    <div>
+        <form method="POST" action="/cryptool/process_playfaircipherDC">
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" required>
+            <label for="key1">Key 1:</label>
+            <input type="text" id="key1" name="key1" required>
+            <label for="key2">Key 2:</label>
+            <input type="text" id="key2" name="key2" required>
+            <input type="submit" value="Decrypt">
+        </form>
+        <div id="plaintext">Plain text message: {{plaintext}}</div>
+    </div>
+    <br>
+    <a href="/cryptool">Go back to home</a>
+</body>
+</html>

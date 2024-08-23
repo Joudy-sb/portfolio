@@ -1,0 +1,233 @@
+
+header {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    background-color: transparent;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 45%;
+}
+nav ul li a:hover {
+    background-color: rgba(179, 179, 179, 0.747);
+}
+
+/* Apply to the body or main container of your sections */
+html, body {
+    height: 100%; /* Full height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Disable scroll on the body */
+}
+
+/* This is the container that will actually scroll */
+.scroll-container {
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable scroll snapping on the y-axis */
+}
+
+/* Each section will snap and fill the screen */
+section {
+    height: 100vh; /* Full viewport height */
+    scroll-snap-align: start; /* Align the start of each section with the scroll container's start */
+    width: 100%; /* Ensure sections fill the width */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+}
+
+#portrait {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    width: 37%;
+    height: 77%;
+}
+
+
+.skills-container {
+    flex: 1;
+    max-width: 40%;
+    padding-left: 5%;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+    height: 5px;
+    
+}
+
+.progress {
+    background: #c28162b2;
+    height: 5px;
+    width: 0; /* Start with width 0 */
+    transition: width 4.5s ease-in-out; /* Animation duration and effect */
+}
+
+#skills-and-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.pie-chart-container {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.pie-chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+#projects-container {
+    display: flex;
+    justify-content: center; /* Adjust as needed to control spacing */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+}
+
+.project-section {
+    background-color: #ffffff; /* Adjust the background color as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px; /* Ensure the width is appropriate to fit within the container */
+    height: 220px; /* Ensure the height is appropriate to fit within the container */
+    margin: 1%;
+    padding: 15px;
+    text-align: justify;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for transform and background color */
+}
+
+.project-section:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+.project-section h2 {
+    font-size: 20px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.project-section p {
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.project-section a {
+    display: inline-block; /* Ensures the link is displayed as a block element */
+    padding: 10px 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #9b7e71;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.project-section a:hover {
+    background-color: #9b7e71c9; /* Change background color on hover */
+}
+
+#achievements-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed to control spacing */
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+}
+
+.achievement {
+    background-color: #ffffff; /* Adjust the background color as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Ensure the width is appropriate to fit within the container */
+    margin: 1%;
+    padding: 2%;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+}
+
+.achievement p {
+    font-size: 16px; /* Adjust as needed */
+    padding: 5%;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}

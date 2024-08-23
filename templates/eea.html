@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EEA</title>
+</head>
+<body>
+    <h1>EXTENDED EUCLID ALGORITHM</h1>
+    <br>
+    <p>Assign b and m (b mod m):</p>
+    <br>
+    <div>
+        <form method="POST" action="/cryptool/process_eea">
+            <label for="b">b = </label>
+            <input type="text" id="b" name="b" required>
+            <label for="m">m = :</label>
+            <input type="text" id="m" name="m" required>
+            <input type="submit" value="Enter">
+        </form>
+        <div id="inverse">the inverse of {{user_b}} mod {{user_m}} is {{inverse}}</div>
+    </div>
+    <br>
+    <a href="/cryptool">Go back to home</a>
+</body>
+</html>
