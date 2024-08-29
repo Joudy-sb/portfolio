@@ -29,88 +29,104 @@
     <div class="scroll-container">
 
         <section id="intro" style="display: flex;">
+
             <div style="padding-left: 5%;">
-                <img src="/static/img/portrait.png" id="portrait">
+                <img src="/static/img/portrait.png" id="portrait" alt ="picture of myself">
                 <p style = "font-size: 30px; font-family: 'Courier New', Courier, monospace; margin-bottom: 0px; ">Joudy Sabbagh</p>
                 <p style = "font-size: 45px; font-family: 'Courier New', Courier, monospace; font-weight: bold; margin-top: 5px; margin-bottom: 55px;" >I'm a <span id="dynamic-part"></span></p>
                 <p style = " width: 40%; font-size: 20px; ">Hello Everyone! Glad to have you on my webpage. I am a hardworking student and i work for fun i like to read and write and i am just writting some things here o make it seem like i wrote something. Have Fun!</p>
                 <button style ="width: 170px; height: 35px; margin-left: 27%; border-radius: 30%;">Download my CV</button>
             </div>
-            </section>
 
-            <section id="skills">
-                <h1 style="text-align: center; font-size: 45px; padding-top: 45px; ">Skills</h1>
-                <div id="skills-and-chart">
-                    <div class="skills-container">
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/pythonlogo.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">Python </div>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-percentage="90"></div>
-                            </div>
+        </section>
+
+        <section id="skills">
+
+            <h1 style="text-align: center; font-size: 45px; padding-top: 45px; ">Skills</h1>
+
+            <div id="skills-and-chart">
+
+                <div class="skills-container">
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/pythonlogo.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="python logo">
+                            <div class="skill-name">Python </div>
                         </div>
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/c++logo.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">C++ </div>
-                            </div>                        
-                            <div class="progress-bar">
-                                <div class="progress" data-percentage="75"></div>
-                            </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="90"></div>
                         </div>
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/numpy.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">Numpy </div>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-percentage="60"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/microsoftAzure.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">Microsoft Azure </div>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-percentage="55"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/jslogo.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">JavaScript </div>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-percentage="40"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/htmlLogo.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">HTML</div>
-                            </div>
-                                <div class="progress-bar">
-                                <div class="progress" data-percentage="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="/static/img/csslogo.png" style="width: 30px; height: 30px; margin-right: 10px;">
-                                <div class="skill-name">CSS</div>
-                            </div>
-                                <div class="progress-bar">
-                                <div class="progress" data-percentage="90"></div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="pie-chart-container" >
-                        <canvas id="softSkillsChart" ></canvas>
                     </div>
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/c++logo.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="c++ logo">
+                            <div class="skill-name">C++ </div>
+                        </div>                        
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/numpy.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="Numpy logo">
+                            <div class="skill-name">Numpy </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="60"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/microsoftAzure.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="microsoft azure logo">
+                            <div class="skill-name">Microsoft Azure </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="55"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/jslogo.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="JavaScript logo">
+                            <div class="skill-name">JavaScript </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="40"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/htmlLogo.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="html logo">
+                            <div class="skill-name">HTML</div>
+                        </div>
+                            <div class="progress-bar">
+                            <div class="progress" data-percentage="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="/static/img/csslogo.png" style="width: 30px; height: 30px; margin-right: 10px;" alt="css logo">
+                            <div class="skill-name">CSS</div>
+                        </div>
+                            <div class="progress-bar">
+                            <div class="progress" data-percentage="90"></div>
+                        </div>
+                    </div>
+
+                </div>  
+
+                <div class="pie-chart-container" >
+                    <canvas id="softSkillsChart" ></canvas>
                 </div>
-            </section>
+
+            </div>
+
+        </section>
 
             <section id="projects">
                     <h1 style="text-align: center; font-size: 45px; padding-top: 45px; ">Project Galery</h1>
@@ -160,12 +176,12 @@
                     <div class="achievement">
                         <h2>Hackathon Winner</h2>
                         <p style="font-size: 16px; padding: 5%;">Participated in an international hackathon competition bringing over 17 Arab country representatives and won first place alongside an amazing team. To know more details about the hackathon, it is <a href="https://www.youtube.com/watch?v=OvrQjolMJ7E">available here.</a> We combatted corruption in public procurement using microsoft azure services.</p>
-                        <img src="/static/img/hackathon.jpg" alt="Hackathon Winner" style="width: 320px; height: 220px">
+                        <img src="/static/img/hackathon.jpg" alt="Hackathon Winner" style="width: 320px; height: 220px" alt="Coding4Integrity hackathon: Winning moment">
                     </div>
                     <div class="achievement">
                         <h2>Beyond an Engineer: Best Idea Award</h2>
                         <p>After attending several workshops on topics such as CV writing and internships, entrepreneurship, pitching and presentations, social entrepreneurship and volunteering, and technical skills, my team and I collaborated on a startup idea and won the award for the best startup idea.</p>
-                        <img src="/static/img/beyondengineer.png" alt="Beyond an Engineer" style="width: 320px; height: 220px">
+                        <img src="/static/img/beyondengineer.png" alt="Beyond an Engineer" style="width: 320px; height: 220px" alt="Beyond an Engineer: Winning moment">
                     </div>
                 </div>
             </section>
@@ -175,22 +191,22 @@
                 <div class="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/static/img/180DC_workshop.png" alt="Crack the Case Workshop" style="width:100%; height: 700px;">
+                            <img src="/static/img/180DC_workshop.png" alt="Crack the Case Workshop" style="width:100%; height: 700px;" alt="certificate of participation for attending consulting workshop (fall 2023)">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/img/DDD_appreciation.png" alt="AUB DDD Cabinet Appreciation" style="width:100%;height: 700px;">
+                            <img src="/static/img/DDD_appreciation.png" alt="AUB DDD Cabinet Appreciation" style="width:100%;height: 700px;" alt="certificate of appreciation in recognition of a record of outstanding accomplishments during one year of participation in the DDD community (spring 2024)">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/img/outdoors_2023.png" alt="OUTDOORS 2023" style="width:100%;height: 700px;">
+                            <img src="/static/img/outdoors_2023.png" alt="OUTDOORS 2023" style="width:100%;height: 700px;" alt="certificate of participation in AUB outdoors as an organizer (may 2023)">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/img/outdoors_2024.png" alt="OUTDOORS 2024" style="width:100%;height: 700px;">
+                            <img src="/static/img/outdoors_2024.png" alt="OUTDOORS 2024" style="width:100%;height: 700px;" alt="certificate of participation in AUB outdoors as an organizer (may 2024) ">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/img/business.png" alt="Business 21st Century" style="width:100%;height: 700px;">
+                            <img src="/static/img/business.png" alt="Business 21st Century" style="width:100%;height: 700px;" alt="certificate of achievement for successful completion of 'business enterprise and 21st century skills (12/08/2016)' ">
                         </div>
                         <div class="carousel-item">
-                            <img src="/static/img/future_dev.png" alt="Future Development" style="width:100%;height: 700px;">
+                            <img src="/static/img/future_dev.png" alt="Future Development" style="width:100%;height: 700px;" alt="certificate of completion of the future developer summer program at the american university of beirut (july31-aug4 2017)">
                         </div>
                     </div>
                     <a class="carousel-control prev" onclick="prevSlide()">❮</a>
