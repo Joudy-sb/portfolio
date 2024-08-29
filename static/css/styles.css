@@ -1,3 +1,53 @@
+.welcome {
+    font-family: monospace;
+}
+
+#home {
+    text-align: justify;
+    padding-top: 60%;
+    padding-left: 5%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.Download-CV{
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 240px;
+}
+
 
 header {
     background: transparent;
@@ -5,29 +55,7 @@ header {
     padding: 10px 20px;
     text-align: center;
 }
-nav {
-    background-color: transparent;
-    overflow: hidden;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-}
-nav ul li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: 45%;
-}
-nav ul li a:hover {
-    background-color: rgba(179, 179, 179, 0.747);
-}
+
 
 /* Apply to the body or main container of your sections */
 html, body {
@@ -65,13 +93,15 @@ section {
 
 
 .skills-container {
-    flex: 1;
-    max-width: 40%;
-    padding-left: 5%;
+    display: inline-block;
+    padding-left: 7%;
 }
 
 .skill {
     margin-bottom: 20px;
+    display: inline-block;
+    width: 40%;
+    padding-right:30px;
 }
 
 .skill-name {
@@ -95,19 +125,17 @@ section {
 }
 
 #skills-and-chart {
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 }
 
 .pie-chart-container {
-    flex: 1;
-    max-width: 40%;
-    display: flex;
+    margin-top: 50px;
+    max-width: 78%;
     justify-content: center;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 12%;
 }
 
 .pie-chart-container canvas {
@@ -116,10 +144,9 @@ section {
 }
 
 #projects-container {
-    display: flex;
+    display: inline-block;
     justify-content: center; /* Adjust as needed to control spacing */
     align-items: center;
-    width: 100%;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width */
 }
 
@@ -127,8 +154,6 @@ section {
     background-color: #ffffff; /* Adjust the background color as needed */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 320px; /* Ensure the width is appropriate to fit within the container */
-    height: 220px; /* Ensure the height is appropriate to fit within the container */
     margin: 1%;
     padding: 15px;
     text-align: justify;
@@ -168,34 +193,27 @@ section {
 }
 
 #achievements-container {
-    display: flex;
+    display: inline-block;
     justify-content: space-around; /* Adjust as needed to control spacing */
-    align-items: flex-start;
-    width: 100%;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width */
 }
 
 .achievement {
     background-color: #ffffff; /* Adjust the background color as needed */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Ensure the width is appropriate to fit within the container */
-    margin: 1%;
-    padding: 2%;
-    text-align: center;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+    padding-left: 5%;
+    margin-top: 0px;
 }
 
 .achievement p {
     font-size: 16px; /* Adjust as needed */
-    padding: 5%;
 }
 
 .carousel {
     position: relative;
     max-width: 100%;
     margin: auto;
-    overflow: hidden;
 }
 
 .carousel-inner {
