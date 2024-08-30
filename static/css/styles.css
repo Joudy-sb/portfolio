@@ -1,17 +1,19 @@
+.welcome-container{
+    padding-top: 40%;
+}
+
 .welcome {
     font-family: monospace;
 }
 
 #home {
     text-align: justify;
-    padding-top: 60%;
-    padding-left: 5%;
 }
 
 .sidenav {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -43,9 +45,11 @@
 }
   
 .Download-CV{
-    margin-top: 30px;
+    margin-top: 60px;
     border-radius: 5px;
-    margin-left: 240px;
+    margin-left: 210px;
+    height: 37px;
+    width: 160px;
 }
 
 
@@ -57,28 +61,27 @@ header {
 }
 
 
-/* Apply to the body or main container of your sections */
 html, body {
-    height: 100%; /* Full height */
-    margin: 0; /* Remove default margin */
-    overflow: hidden; /* Disable scroll on the body */
+    height: 100%; 
+    margin: 0;
+    overflow: hidden; 
 }
 
-/* This is the container that will actually scroll */
 .scroll-container {
-    height: 100vh; /* Full viewport height */
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scroll-snap-type: y mandatory; /* Enable scroll snapping on the y-axis */
+    height: 100vh; 
+    overflow-y: scroll; 
+    overflow-x:hidden; 
+    scroll-snap-type: y mandatory; 
 }
 
-/* Each section will snap and fill the screen */
 section {
-    height: 100vh; /* Full viewport height */
-    scroll-snap-align: start; /* Align the start of each section with the scroll container's start */
-    width: 100%; /* Ensure sections fill the width */
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Center content horizontally */
+    height: 100vh; 
+    scroll-snap-align: start; 
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center; 
     position: relative;
+    padding: 5%;
 }
 
 #portrait {
@@ -94,7 +97,6 @@ section {
 
 .skills-container {
     display: inline-block;
-    padding-left: 7%;
 }
 
 .skill {
@@ -135,7 +137,6 @@ section {
     max-width: 78%;
     justify-content: center;
     align-items: center;
-    padding-left: 12%;
 }
 
 .pie-chart-container canvas {
@@ -155,7 +156,6 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1%;
-    padding: 15px;
     text-align: justify;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for transform and background color */
@@ -202,7 +202,6 @@ section {
     background-color: #ffffff; /* Adjust the background color as needed */
     border-radius: 8px;
     box-sizing: border-box; /* Ensures padding and borders are included in the total width */
-    padding-left: 5%;
     margin-top: 0px;
 }
 

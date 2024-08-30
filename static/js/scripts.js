@@ -112,3 +112,15 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+// prevent link jump 
+document.querySelectorAll('.sidenav a').forEach(link => {
+  link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default jump
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          closeNav(); // Close nav after scrolling
+      }
+  });
+});

@@ -14,27 +14,31 @@
 </head>
 
 <body>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home">Home</a>
-            <a href="#skills">My Skills</a>
-            <a href="#chatroom">Project Gallery</a>
-            <a href="#hackathon">Achievements</a>
-            <a href="#certificates">Certifications</a>
-        </div>
-          
-        <div style="padding: 20px;">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        </div> 
 
     <main>
 
         <div class="scroll-container">
 
             <section id="home">
-                <p class="welcome" style ="font-size: 26px;">Joudy Sabbagh</p>
-                <p class="welcome" style ="font-size: 32px; font-weight: bolder;">I'm a <span id="dynamic-part"></span></p>
-                <button class="Download-CV">Download my CV</button>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#skills" onclick="closeNav()">My Skills</a>
+                    <a href="#chatroom" onclick="closeNav()">Project Gallery</a>
+                    <a href="#hackathon" onclick="closeNav()">Achievements</a>
+                    <a href="#certificates" onclick="closeNav()">Certifications</a>
+                </div>
+            
+                <div style="padding: 20px;">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="welcome-container">
+                    <p class="welcome" style ="font-size: 26px;">Joudy Sabbagh</p>
+                    <p class="welcome" style ="font-size: 32px; font-weight: bolder;">I'm a <span id="dynamic-part"></span></p>
+                    <button class="Download-CV">Download my CV</button>
+                </div>
+
             </section>
 
             <section id="skills">
