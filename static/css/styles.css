@@ -1,15 +1,58 @@
-.welcome-container{
-    padding-top: 40%;
+html, body {
+    height: 100%; 
+    margin: 0;
+    overflow: hidden; 
+}
+.scroll-container {
+    height: 100vh; 
+    overflow-y: scroll; 
+    overflow-x:hidden; 
+    scroll-snap-type: y mandatory; 
+}
+section {
+    height: 100vh; 
+    scroll-snap-align: start; 
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center; 
+    position: relative;
+}
+.title-sections{
+    font-size: 32px;
+    padding-top: 20px;
 }
 
-.welcome {
-    font-family: monospace;
-}
-
-#home {
+/*WELCOME CSS CODE*/
+#welcome-section {
     text-align: justify;
+    padding-left: 5%;
+}
+.welcome-container{
+    padding-top: 55%;
+}
+.welcome-1 {
+    font-family: monospace;
+    font-size: 20px;
+}
+.welcome-2 {
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.download-CV{
+    margin-top: 60px;
+    border-radius: 5px;
+    margin-left: 50%;
+    height: 30px;
+    width: 140px;
+}
+.textCV {
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
 }
 
+/*NAV BAR CSS CODE*/
 .sidenav {
     height: 100%;
     width: 0;
@@ -22,7 +65,6 @@
     transition: 0.5s;
     padding-top: 60px;
 }
-  
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -30,12 +72,10 @@
     color: #818181;
     display: block;
     transition: 0.3s;
-}
-  
+}  
 .sidenav a:hover {
     color: #f1f1f1;
-}
-  
+} 
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -43,193 +83,112 @@
     font-size: 36px;
     margin-left: 50px;
 }
-  
-.Download-CV{
-    margin-top: 60px;
-    border-radius: 5px;
-    margin-left: 210px;
-    height: 37px;
-    width: 160px;
+
+/*SKILLS CSS CODE*/
+#skills-section{
+    padding-left: 5%;
 }
-
-
-header {
-    background: transparent;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    text-align: center;
-}
-
-
-html, body {
-    height: 100%; 
-    margin: 0;
-    overflow: hidden; 
-}
-
-.scroll-container {
-    height: 100vh; 
-    overflow-y: scroll; 
-    overflow-x:hidden; 
-    scroll-snap-type: y mandatory; 
-}
-
-section {
-    height: 100vh; 
-    scroll-snap-align: start; 
-    width: 100%;
-    flex-direction: column; 
-    justify-content: center; 
-    position: relative;
-    padding: 5%;
-}
-
-#portrait {
-    position: absolute;
-    bottom: 25px;
-    right: 0;
-    margin-right: 50px;
-    margin-bottom: 0px;
-    width: 37%;
-    height: 77%;
-}
-
-
 .skills-container {
     display: inline-block;
 }
-
+.skills-type{
+    text-decoration: underline;
+}
 .skill {
     margin-bottom: 20px;
     display: inline-block;
     width: 40%;
     padding-right:30px;
 }
-
 .skill-name {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14px;
 }
-
+.skill-img{
+    width: 20px;
+    height: 20px; 
+    margin-right: 10px;
+}
 .progress-bar {
     background: #e0e0e0;
     position: relative;
     overflow: hidden;
-    height: 5px;
-    
+    height: 3px;
 }
-
 .progress {
     background: #c28162b2;
     height: 5px;
-    width: 0; /* Start with width 0 */
-    transition: width 4.5s ease-in-out; /* Animation duration and effect */
+    width: 0;
+    transition: width 4.5s ease-in-out; 
 }
-
-#skills-and-chart {
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-}
-
 .pie-chart-container {
-    margin-top: 50px;
-    max-width: 78%;
-    justify-content: center;
-    align-items: center;
+    max-width: 250px;
+    padding-left: 8%;
 }
 
-.pie-chart-container canvas {
-    width: 100% !important;
-    height: auto !important;
+/*PROJECTS CSS CODE*/
+#project-section{
+    padding-left: 5%;
 }
-
-#projects-container {
-    display: inline-block;
-    justify-content: center; /* Adjust as needed to control spacing */
-    align-items: center;
-    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
+.project-name{
+    text-decoration: underline;
+    font-weight: lighter;
+    font-style: italic;
 }
-
-.project-section {
-    background-color: #ffffff; /* Adjust the background color as needed */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 1%;
+.project-desc{
+    font-size: 14px;
+    width: 90%;
     text-align: justify;
-    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for transform and background color */
 }
-
-.project-section:hover {
-    transform: scale(1.1); /* Slightly increase the size */
-    background-color: #f0f0f0; /* Change the background color on hover */
-}
-
-.project-section h2 {
-    font-size: 20px; /* Adjust as needed */
-    margin-bottom: 10px;
-}
-
-.project-section p {
-    font-size: 16px; /* Adjust as needed */
-    margin-bottom: 10px;
-}
-
-.project-section a {
-    display: inline-block; /* Ensures the link is displayed as a block element */
-    padding: 10px 20px;
-    font-size: 12px;
-    border: none;
-    border-radius: 4px;
-    background-color: #9b7e71;
-    color: #ffffff;
+.project-link{
+    color: #111;
     text-decoration: none;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    font-size: 12px;
+}
+.project-btn{
+    border-radius: 5px;
+    margin-left: 50%;
+    height: 24px;
+    width: 140px;
 }
 
-.project-section a:hover {
-    background-color: #9b7e71c9; /* Change background color on hover */
+/*ACHIEVEMENTS CSS CODE*/
+#achievement-section{
+    padding-left: 5%;
+}
+.achievement-name{
+    text-decoration: underline;
+    font-weight: lighter;
+    font-style: italic;
+}
+.achievement-desc{
+    font-size: 14px;
+    width: 90%;
+    text-align: justify;
+}
+.achievement-img{
+    width: 60%; 
+    height: 21%;
+    padding-left: 15%;
 }
 
-#achievements-container {
-    display: inline-block;
-    justify-content: space-around; /* Adjust as needed to control spacing */
-    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
-}
-
-.achievement {
-    background-color: #ffffff; /* Adjust the background color as needed */
-    border-radius: 8px;
-    box-sizing: border-box; /* Ensures padding and borders are included in the total width */
-    margin-top: 0px;
-}
-
-.achievement p {
-    font-size: 16px; /* Adjust as needed */
-}
-
+/*CERTIFICATIONS CSS CODE*/
 .carousel {
     position: relative;
-    max-width: 100%;
+    width: 320px;
     margin: auto;
 }
-
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .carousel-item {
-    min-width: 100%;
+    width: 320px;
     box-sizing: border-box;
 }
-
 .carousel img {
-    width: 100%;
+    width: 320px;
     vertical-align: middle;
 }
-
 .carousel-control {
     position: absolute;
     top: 50%;
@@ -240,11 +199,17 @@ section {
     cursor: pointer;
     border-radius: 50%;
 }
-
 .carousel-control.prev {
     left: 10px;
 }
-
 .carousel-control.next {
     right: 10px;
+}
+.carousel-img{
+    width:320px; 
+    height: 250px;
+}
+.certificate-desc{
+    font-size: 14px;
+    padding-left: 5%;
 }

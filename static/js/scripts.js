@@ -73,6 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
           plugins: {
               legend: {
                   position: 'bottom',
+                  labels: {
+                    font: {
+                        size: 10
+                    },
+                    boxWidth:10,
+                    boxHeight:10
+                }
               },
               tooltip: {
                   enabled: true
