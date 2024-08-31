@@ -83,6 +83,10 @@ section {
     font-size: 36px;
     margin-left: 50px;
 }
+.nav-open{
+    font-size:25px;
+    cursor:pointer;
+}
 
 /*SKILLS CSS CODE*/
 #skills-section{
@@ -212,4 +216,331 @@ section {
 .certificate-desc{
     font-size: 14px;
     padding-left: 5%;
+}
+
+
+@media screen and (min-width: 430px) {
+    .title-sections{
+        font-size: 42px;
+        padding-top: 5%;
+    }
+    
+    /*WELCOME CSS CODE*/
+    #welcome-section {
+        text-align: justify;
+        padding-left: 5%;
+    }
+    .welcome-container{
+        padding-top: 40%;
+    }
+    .welcome-1 {
+        font-family: monospace;
+        font-size: 26px;
+    }
+    .welcome-2 {
+        font-family: monospace;
+        font-size: 34px;
+        font-weight: bolder;
+    }
+    .download-CV{
+        margin-top: 60px;
+        border-radius: 5px;
+        margin-left: 62%;
+        height: 37px;
+        width: 170px;
+    }
+    .textCV {
+        color: #111;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    /*NAV BAR CSS CODE*/
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }  
+    .sidenav a:hover {
+        color: #f1f1f1;
+    } 
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .nav-open{
+        font-size:40px;
+        cursor:pointer;
+    }
+
+    /*SKILLS CSS CODE*/
+    #skills-section{
+        padding-left: 5%;
+    }
+    .skills-container {
+        display: inline-block;
+    }
+    .skills-type{
+        text-decoration: underline;
+        font-size: 24px;
+    }
+    .skill {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 43%;
+        padding-right:30px;
+    }
+    .skill-name {
+        font-size: 20px;
+    }
+    .skill-img{
+        width: 20px;
+        height: 20px; 
+        margin-right: 10px;
+    }
+    .progress-bar {
+        background: #e0e0e0;
+        position: relative;
+        overflow: hidden;
+        height: 4px;
+    }
+    .progress {
+        background: #c28162b2;
+        height: 5px;
+        width: 0;
+        transition: width 4.5s ease-in-out; 
+    }
+    .pie-chart-container {
+        max-width: 350px;
+        padding-left: 25%;
+    }
+
+    /*PROJECTS CSS CODE*/
+    #project-section{
+        padding-left: 5%;
+    }
+    .project-name{
+        text-decoration: underline;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 24px;
+    }
+    .project-desc{
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+    }
+    .project-link{
+        color: #111;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .project-btn{
+        border-radius: 5px;
+        margin-left: 63%;
+        height: 30px;
+        width: 170px;
+    }
+
+    /*ACHIEVEMENTS CSS CODE*/
+    #achievement-section{
+        padding-left: 5%;
+    }
+    .achievement-name{
+        text-decoration: underline;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 24px;
+    }
+    .achievement-desc{
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+    }
+    .achievement-img{
+        width: 50%; 
+        height: 25%;
+        padding-left: 20%;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .title-sections{
+        font-size: 42px;
+        padding-top: 5%;
+    }
+    
+    /*WELCOME CSS CODE*/
+    #welcome-section {
+        text-align: justify;
+        padding-left: 5%;
+    }
+    .welcome-container{
+        padding-top: 35%;
+    }
+    .welcome-1 {
+        font-family: monospace;
+        font-size: 46px;
+    }
+    .welcome-2 {
+        font-family: monospace;
+        font-size: 54px;
+        font-weight: bolder;
+    }
+    .download-CV{
+        margin-top: 60px;
+        border-radius: 5px;
+        margin-left: 62%;
+        height: 37px;
+        width: 170px;
+    }
+    .textCV {
+        color: #111;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    /*NAV BAR CSS CODE*/
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }  
+    .sidenav a:hover {
+        color: #f1f1f1;
+    } 
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .nav-open{
+        font-size:40px;
+        cursor:pointer;
+    }
+
+    /*SKILLS CSS CODE*/
+    #skills-section{
+        padding-left: 5%;
+    }
+    .skills-container {
+        display: inline-block;
+    }
+    .skills-type{
+        text-decoration: underline;
+        font-size: 24px;
+    }
+    .skill {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 43%;
+        padding-right:30px;
+    }
+    .skill-name {
+        font-size: 20px;
+    }
+    .skill-img{
+        width: 20px;
+        height: 20px; 
+        margin-right: 10px;
+    }
+    .progress-bar {
+        background: #e0e0e0;
+        position: relative;
+        overflow: hidden;
+        height: 4px;
+    }
+    .progress {
+        background: #c28162b2;
+        height: 5px;
+        width: 0;
+        transition: width 4.5s ease-in-out; 
+    }
+    .pie-chart-container {
+        max-width: 350px;
+        padding-left: 25%;
+    }
+
+    /*PROJECTS CSS CODE*/
+    #project-section{
+        padding-left: 5%;
+    }
+    .project-name{
+        text-decoration: underline;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 24px;
+    }
+    .project-desc{
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+    }
+    .project-link{
+        color: #111;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .project-btn{
+        border-radius: 5px;
+        margin-left: 63%;
+        height: 30px;
+        width: 170px;
+    }
+
+    /*ACHIEVEMENTS CSS CODE*/
+    #achievement-section{
+        padding-left: 5%;
+    }
+    .achievement-name{
+        text-decoration: underline;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 24px;
+    }
+    .achievement-desc{
+        font-size: 20px;
+        width: 90%;
+        text-align: justify;
+    }
+    .achievement-img{
+        width: 50%; 
+        height: 25%;
+        padding-left: 20%;
+    }
 }
