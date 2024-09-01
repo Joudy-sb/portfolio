@@ -253,37 +253,41 @@ section {
 }
 
 @media screen and (min-width: 450px) {
+    .title-sections{
+        font-size: 42px;
+        padding-top: 7%;
+    }
     /*WELCOME CSS CODE*/
     #welcome-section {
         text-align: justify;
         padding-left: 7%;
     }
     .welcome-container{
-        padding-top: 65%;
+        padding-top: 40%;
     }
     .welcome-1 {
         font-family: monospace;
-        font-size: 22px;
+        font-size: 28px;
         color: black;
     }
     .welcome-2 {
         font-family: monospace;
-        font-size: 28px;
+        font-size: 36px;
         font-weight: bolder;
         color: black;
     }
     .download-CV{
-        margin-top: 60px;
+        margin-top: 70px;
         border-radius: 5px;
-        margin-left: 50%;
-        height: 35px;
-        width: 150px;
+        margin-left: 55%;
+        height: 40px;
+        width: 200px;
         background-color: #dbe7e4;
     }
     .textCV {
         color: #111;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 18px;
         color: black;
         font-weight: bold;
     }
@@ -320,7 +324,7 @@ section {
         margin-left: 50px;
     }
     .nav-open{
-        font-size:25px;
+        font-size:35px;
         cursor:pointer;
     }
 
@@ -333,7 +337,8 @@ section {
     }
     .skills-type{
         text-decoration: underline;
-        font-size: 22px;
+        font-size: 26px;
+        margin-bottom: 35px;
     }
     .skill {
         margin-bottom: 20px;
@@ -342,7 +347,7 @@ section {
         padding-right:30px;
     }
     .skill-name {
-        font-size: 16px;
+        font-size: 20px;
     }
     .skill-img{
         width: 25px;
@@ -362,8 +367,8 @@ section {
         transition: width 4.5s ease-in-out; 
     }
     .pie-chart-container {
-        max-width: 75%;
-        padding-left: 8%;
+        max-width: 52.5%;
+        padding-left: 17%;
     }
 
     /*PROJECTS CSS CODE*/
@@ -375,23 +380,23 @@ section {
         text-decoration: underline;
         font-weight: lighter;
         font-style: italic;
-        font-size: 22px;
+        font-size: 26px;
     }
     .project-desc{
-        font-size: 17px;
+        font-size: 20px;
         width: 90%;
         text-align: justify;
     }
     .project-link{
         color: #111;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 16px;
     }
     .project-btn{
         border-radius: 5px;
-        margin-left: 50%;
+        margin-left: 60%;
         height: 30px;
-        width: 140px;
+        width: 170px;
         background-color: #dbe7e4;
     }
 
@@ -403,16 +408,16 @@ section {
         text-decoration: underline;
         font-weight: lighter;
         font-style: italic;
-        font-size: 22px;
+        font-size: 30px;
     }
     .achievement-desc{
-        font-size: 17px;
+        font-size: 20px;
         width: 90%;
         text-align: justify;
     }
     .achievement-img{
         width: 60%; 
-        height: 21%;
+        height: 25%;
         padding-left: 15%;
     }
 
@@ -475,46 +480,49 @@ section {
     }
     .carousel-img{
         width:100%;
-        height:280px;
+        height:480px;
     }
     @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
     }
 }
-
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1200px) {
+    .title-sections{
+        font-size: 42px;
+        padding-top: 3%;
+    }
     /*WELCOME CSS CODE*/
     #welcome-section {
         text-align: justify;
         padding-left: 7%;
     }
     .welcome-container{
-        padding-top: 65%;
+        padding-top: 12%;
     }
     .welcome-1 {
         font-family: monospace;
-        font-size: 22px;
+        font-size: 28px;
         color: black;
     }
     .welcome-2 {
         font-family: monospace;
-        font-size: 28px;
+        font-size: 36px;
         font-weight: bolder;
         color: black;
     }
     .download-CV{
-        margin-top: 60px;
+        margin-top: 70px;
         border-radius: 5px;
-        margin-left: 50%;
-        height: 35px;
-        width: 150px;
+        margin-left: 72%;
+        height: 40px;
+        width: 200px;
         background-color: #dbe7e4;
     }
     .textCV {
         color: #111;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 18px;
         color: black;
         font-weight: bold;
     }
@@ -551,7 +559,7 @@ section {
         margin-left: 50px;
     }
     .nav-open{
-        font-size:25px;
+        font-size:35px;
         cursor:pointer;
     }
 
@@ -561,19 +569,21 @@ section {
     }
     .skills-container {
         display: inline-block;
+        max-width: 30%;
     }
     .skills-type{
         text-decoration: underline;
-        font-size: 22px;
+        font-size: 24px;
+        margin-bottom: 35px;
     }
     .skill {
         margin-bottom: 20px;
         display: inline-block;
-        width: 40%;
+        width: 25%;
         padding-right:30px;
     }
     .skill-name {
-        font-size: 16px;
+        font-size: 18px;
     }
     .skill-img{
         width: 25px;
@@ -593,8 +603,12 @@ section {
         transition: width 4.5s ease-in-out; 
     }
     .pie-chart-container {
-        max-width: 75%;
-        padding-left: 8%;
+        max-width: 15%;
+        padding-left: 17%;
+    }
+    .skills-and-chart{
+        display: inline-block;
+        max-width: 100%;
     }
 
     /*PROJECTS CSS CODE*/
@@ -606,23 +620,23 @@ section {
         text-decoration: underline;
         font-weight: lighter;
         font-style: italic;
-        font-size: 22px;
+        font-size: 26px;
     }
     .project-desc{
-        font-size: 17px;
+        font-size: 20px;
         width: 90%;
         text-align: justify;
     }
     .project-link{
         color: #111;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 16px;
     }
     .project-btn{
         border-radius: 5px;
-        margin-left: 50%;
+        margin-left: 60%;
         height: 30px;
-        width: 140px;
+        width: 170px;
         background-color: #dbe7e4;
     }
 
@@ -634,16 +648,16 @@ section {
         text-decoration: underline;
         font-weight: lighter;
         font-style: italic;
-        font-size: 22px;
+        font-size: 30px;
     }
     .achievement-desc{
-        font-size: 17px;
+        font-size: 20px;
         width: 90%;
         text-align: justify;
     }
     .achievement-img{
         width: 60%; 
-        height: 21%;
+        height: 25%;
         padding-left: 15%;
     }
 
@@ -706,7 +720,7 @@ section {
     }
     .carousel-img{
         width:100%;
-        height:280px;
+        height:480px;
     }
     @keyframes fade {
     from {opacity: .4} 
