@@ -60,12 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
               label: 'Soft Skills',
               data: [20, 25, 30, 15, 10], // Example data, change to your actual percentages
               backgroundColor: [
-                  '#FF6384',
-                  '#36A2EB',
-                  '#FFCE56',
-                  '#4BC0C0',
-                  '#9966FF'
-              ]
+                  '#c5dedd',
+                  '#dbe7e4',
+                  '#d6e2e9',
+                  '#bcd4e6',
+                  '#99c1de'
+              ],
+              borderColor: [
+                '#111', // Border color for 'Communication'
+                '#111', // Border color for 'Teamwork'
+                '#111', // Border color for 'Problem-solving'
+                '#111', // Border color for 'Time Management'
+                '#111'  // Border color for 'Adaptability'
+            ],
+            borderWidth: 1 // Set border width
           }]
       },
       options: {
@@ -78,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         size: 10
                     },
                     boxWidth:10,
-                    boxHeight:10
+                    boxHeight:10,
                 }
               },
               tooltip: {
@@ -88,29 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
-
-let currentIndex = 0;
-
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    if (index >= slides.length) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = slides.length - 1;
-    } else {
-        currentIndex = index;
-    }
-    const offset = -currentIndex * 100;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-}
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -131,3 +116,30 @@ document.querySelectorAll('.sidenav a').forEach(link => {
       }
   });
 });
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
