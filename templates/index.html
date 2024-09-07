@@ -34,12 +34,20 @@
                     <span class="nav-open" onclick="openNav()">&#9776;</span>
                 </div>
                 <div class="welcome-container">
-                    <p class="welcome-1">Joudy Sabbagh</p>
-                    <p class="welcome-2">I'm a <span id="dynamic-part"></span></p>
-                    <button class="download-CV">
-                        <a href="/static/pdf/CV_JoudySabbagh.pdf" download="CV_JoudySabbagh" class="textCV">Download CV</a>
-                    </button>
+                    <div style="position: relative;">
+                        <div class="grey-box"></div> 
+                        <img src="/static/img/myself.png" class="portrait">
+                    </div>
+                
+                    <div class="welcome">
+                        <p class="welcome-1">Joudy Sabbagh</p>
+                        <p class="welcome-2">I'm a <span id="dynamic-part"></span></p>
+                        <button class="download-CV">
+                            <a href="/static/pdf/CV_JoudySabbagh.pdf" download="CV_JoudySabbagh" class="textCV">Download CV</a>
+                        </button>
+                    </div>
                 </div>
+                
 
             </section>
 
@@ -137,24 +145,30 @@
                 <h2 class="title-sections">Project Galery</h2>
                 
                 <div id="projects-container">
-                
+
+                    <div id="project-container">
                     <h3 class="project-name">Chat-Room</h3>
                     <p class="project-desc">Provides a real-time communication platform where users can create or join chat rooms, send encrypted messages, and view message histories, an ideal tool for confidential discussions and collaborations.</p>
                     <button class="project-btn">
                         <a href="/chatroom" class="project-link">Try Chat-Room</a>
                     </button>
+                    </div>
 
+                    <div id="project-container">
                     <h3 class="project-name">Cryptool</h3>
                     <p class="project-desc">Offers various encryption and decryption tools, including implementations of the Hill Cipher, Playfair Cipher and more, allowing users to experiment with different cryptographic techniques.</p>
                     <button class="project-btn">
                         <a href="/cryptool" class="project-link">Try Cryptool</a>
                     </button>
-                    
+                    </div>
+
+                    <div id="project-container">
                     <h3 class="project-name">Job Matcher</h3>
                     <p class="project-desc">Utilizes machine learning to match job descriptions with candidate profiles, providing tailored job recommendations. It streamlines the job search by aligning candidate skills with job requirements.</p>
                     <button class="project-btn">
                         <a href="https://colab.research.google.com/drive/1o1ODaSZSyezNmcrxqzH2A2a2QqpPjll1?usp=sharing" class="project-link">View Source Code</a>
                     </button>
+                    </div>
 
                 </div>
             
@@ -167,14 +181,19 @@
 
                 <h2 class="title-sections">Achievements</h2>
 
+                <div class="achievement-container">
+                    
+                <div class="achivement">
                     <h3 class="achievement-name">Hackathon Winner</h3>
                     <p class="achievement-desc">Participated in an international hackathon competition bringing over 17 Arab country representatives and won first place alongside an amazing team. To know more details about the hackathon, it is <a href="https://www.youtube.com/watch?v=OvrQjolMJ7E">available here.</a></p>
                     <img src="/static/img/hackathon.jpg" alt="Hackathon Winner" class="achievement-img" alt="Coding4Integrity hackathon: Winning moment">
-
+                </div>
+                <div class="achivement">
                     <h3 class="achievement-name">Beyond an Engineer: Best Idea Award</h3>
                     <p class="achievement-desc">We attended workshops on topics like CV writing and internships, entrepreneurship, pitching and presentations, social entrepreneurship, and technical skills, we worked on a startup idea and won the award for best startup idea.</p>
                     <img src="/static/img/beyondengineer.png" alt="Beyond an Engineer"  class="achievement-img" alt="Beyond an Engineer: Winning moment">
-
+                </div>
+                </div>
 
             </section>
 

@@ -60,11 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
               label: 'Soft Skills',
               data: [20, 25, 30, 15, 10], // Example data, change to your actual percentages
               backgroundColor: [
-                  '#c5dedd',
-                  '#dbe7e4',
-                  '#d6e2e9',
-                  '#bcd4e6',
-                  '#99c1de'
+                  '#a9c4d8',
+                  '#809aad',
+                  '#587284',
+                  '#324c5d',
+                  '#0d2a39'
               ],
               borderColor: [
                 '#111', // Border color for 'Communication'

@@ -2,7 +2,7 @@ html, body {
     height: 100%; 
     margin: 0;
     overflow: hidden; 
-    background-color: #f0efeb;
+    background-color: #e7ecef;
 }
 .scroll-container {
     height: 100vh; 
@@ -29,33 +29,57 @@ section {
     padding-left: 7%;
 }
 .welcome-container{
-    padding-top: 65%;
+    padding-top: 25%;
+}
+.welcome {
+    padding-top: 7%;
+    padding-left: 5%;
+    width: 500px;
 }
 .welcome-1 {
+    padding-top: 50px;
     font-family: monospace;
-    font-size: 22px;
+    font-size: 18px;
     color: black;
 }
 .welcome-2 {
     font-family: monospace;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bolder;
     color: black;
 }
-.download-CV{
-    margin-top: 60px;
+.download-CV {
+    margin-top: 40px;
     border-radius: 5px;
-    margin-left: 50%;
+    margin-left: 25%;
     height: 35px;
-    width: 150px;
-    background-color: #dbe7e4;
+    width: 170px;
+    background-color: #aac7dd;
 }
 .textCV {
-    color: #111;
     text-decoration: none;
     font-size: 16px;
     color: black;
     font-weight: bold;
+}
+.portrait {
+    width: auto;
+    height: 250px; 
+    position: absolute;
+    bottom: 0; 
+    left: 44%; 
+    transform: translateX(-50%); 
+}    
+.grey-box {
+    width: 250px;
+    height: 250px;
+    background-color: #a9c4d8;
+    border: 3px solid #111; 
+    position: relative;
+    margin-left: 11%;
+    top: 0;
+    left: 0;
+    z-index: 0; 
 }
 
 /*NAV BAR CSS CODE*/
@@ -66,7 +90,7 @@ section {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #161616;
+    background-color: #081821;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -120,20 +144,20 @@ section {
     margin-right: 10px;
 }
 .progress-bar {
-    background: #dbdbdb;
+    background: #cfd2d3;
     position: relative;
     overflow: hidden;
     height: 3px;
 }
 .progress {
-    background: #646464;
+    background: #0d2a39;
     height: 5px;
     width: 0;
     transition: width 4.5s ease-in-out; 
 }
 .pie-chart-container {
     max-width: 75%;
-    padding-left: 8%;
+    padding-left: 0px;
 }
 
 /*PROJECTS CSS CODE*/
@@ -148,7 +172,7 @@ section {
     font-size: 22px;
 }
 .project-desc{
-    font-size: 17px;
+    font-size: 15px;
     width: 90%;
     text-align: justify;
 }
@@ -160,9 +184,19 @@ section {
 .project-btn{
     border-radius: 5px;
     margin-left: 50%;
-    height: 30px;
+    height: 25px;
     width: 140px;
-    background-color: #dbe7e4;
+    background-color: #a9c4d8;
+}
+#project-container{
+    padding-left:20px;
+    padding-bottom:20px;
+    background-color: #a9c4d84a;
+    max-width: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 5%;
 }
 
 /*ACHIEVEMENTS CSS CODE*/
@@ -263,7 +297,12 @@ section {
         padding-left: 7%;
     }
     .welcome-container{
-        padding-top: 40%;
+        padding-top: 10%;
+    }
+    .welcome {
+        padding-top: 7%;
+        padding-left: 5%;
+        width: 500px;
     }
     .welcome-1 {
         font-family: monospace;
@@ -276,20 +315,39 @@ section {
         font-weight: bolder;
         color: black;
     }
-    .download-CV{
-        margin-top: 70px;
+    .download-CV {
+        margin-top: 40px;
         border-radius: 5px;
-        margin-left: 55%;
+        margin-left: 85%;
         height: 40px;
         width: 200px;
-        background-color: #dbe7e4;
+        background-color: #aac7dd;
     }
     .textCV {
-        color: #111;
         text-decoration: none;
         font-size: 18px;
         color: black;
         font-weight: bold;
+    }
+    .portrait {
+        width: auto;
+        height: 400px;
+        position: absolute;
+        bottom: 0; 
+        left: 44%; 
+        transform: translateX(-50%);
+        z-index: 1;
+    }    
+    .grey-box {
+        width: 450px;
+        height: 450px;
+        background-color: #a9c4d8;
+        border: 3px solid #111; 
+        position: relative;
+        margin-left: 14%;
+        top: 0;
+        left: 0;
+        z-index: 0; 
     }
 
     /*NAV BAR CSS CODE*/
@@ -300,7 +358,7 @@ section {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #161616;
+        background-color: #081821;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -355,20 +413,20 @@ section {
         margin-right: 10px;
     }
     .progress-bar {
-        background: #dbdbdb;
+        background: #cfd2d3;
         position: relative;
         overflow: hidden;
         height: 3px;
     }
     .progress {
-        background: #646464;
+        background: #0d2a39;
         height: 5px;
         width: 0;
         transition: width 4.5s ease-in-out; 
     }
     .pie-chart-container {
         max-width: 52.5%;
-        padding-left: 17%;
+        padding-left: 0px;
     }
 
     /*PROJECTS CSS CODE*/
@@ -397,7 +455,17 @@ section {
         margin-left: 60%;
         height: 30px;
         width: 170px;
-        background-color: #dbe7e4;
+        background-color: #a9c4d8;
+    }
+    #project-container{
+        padding-left:20px;
+        padding-bottom:20px;
+        background-color: #a9c4d84a;
+        max-width: 500px;
+        display: inline-block;
+        border-radius: 10px;
+        margin: 20px;
+        margin-left: 10%;
     }
 
     /*ACHIEVEMENTS CSS CODE*/
@@ -416,9 +484,9 @@ section {
         text-align: justify;
     }
     .achievement-img{
-        width: 60%; 
-        height: 25%;
-        padding-left: 15%;
+        width: 50%; 
+        height: 20%;
+        padding-left: 20%;
     }
 
     /*CERTIFICATIONS CSS CODE*/
@@ -497,8 +565,14 @@ section {
         text-align: justify;
         padding-left: 7%;
     }
-    .welcome-container{
-        padding-top: 12%;
+    .welcome-container {
+        padding-top: 5%;
+        display: flex;
+    }
+    .welcome {
+        padding-top: 7%;
+        padding-left: 10%;
+        width: 500px;
     }
     .welcome-1 {
         font-family: monospace;
@@ -511,21 +585,40 @@ section {
         font-weight: bolder;
         color: black;
     }
-    .download-CV{
-        margin-top: 70px;
+    .download-CV {
+        margin-top: 75px;
         border-radius: 5px;
-        margin-left: 72%;
+        margin-left: 85%;
         height: 40px;
         width: 200px;
-        background-color: #dbe7e4;
+        background-color: #aac7dd;
     }
     .textCV {
-        color: #111;
         text-decoration: none;
         font-size: 18px;
         color: black;
         font-weight: bold;
     }
+    .portrait {
+        width: auto;
+        height: 400px; 
+        position: absolute;
+        bottom: 0; 
+        left: 65%;
+        transform: translateX(-50%); 
+        z-index: 1; 
+    }    
+    .grey-box {
+        width: 450px;
+        height: 450px;
+        background-color: #a9c4d8;
+        border: 3px solid #111; 
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 0; 
+    }
+    
 
     /*NAV BAR CSS CODE*/
     .sidenav {
@@ -535,7 +628,7 @@ section {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #161616;
+        background-color: #081821;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -568,8 +661,9 @@ section {
         padding-left: 5%;
     }
     .skills-container {
+        flex:1;
         display: inline-block;
-        max-width: 30%;
+        max-width: 40%;
     }
     .skills-type{
         text-decoration: underline;
@@ -579,7 +673,7 @@ section {
     .skill {
         margin-bottom: 20px;
         display: inline-block;
-        width: 25%;
+        width: 90%;
         padding-right:30px;
     }
     .skill-name {
@@ -591,24 +685,24 @@ section {
         margin-right: 10px;
     }
     .progress-bar {
-        background: #dbdbdb;
+        background: #cfd2d3;
         position: relative;
         overflow: hidden;
         height: 3px;
     }
     .progress {
-        background: #646464;
+        background: #0d2a39;
         height: 5px;
         width: 0;
-        transition: width 4.5s ease-in-out; 
+        transition: width 7s ease-in-out; 
     }
     .pie-chart-container {
-        max-width: 15%;
-        padding-left: 17%;
+        max-width: 30%;
+        padding-left: 12%;
+        flex:1;
     }
-    .skills-and-chart{
-        display: inline-block;
-        max-width: 100%;
+    #skills-and-chart{
+        display: flex;
     }
 
     /*PROJECTS CSS CODE*/
@@ -620,10 +714,10 @@ section {
         text-decoration: underline;
         font-weight: lighter;
         font-style: italic;
-        font-size: 26px;
+        font-size: 24px;
     }
     .project-desc{
-        font-size: 20px;
+        font-size: 18px;
         width: 90%;
         text-align: justify;
     }
@@ -634,10 +728,19 @@ section {
     }
     .project-btn{
         border-radius: 5px;
-        margin-left: 60%;
+        margin-left: 55%;
         height: 30px;
-        width: 170px;
-        background-color: #dbe7e4;
+        width: 175px;
+        background-color: #a9c4d8;
+    }
+    #project-container{
+        padding-left:20px;
+        padding-bottom:20px;
+        background-color: #a9c4d84a;
+        max-width: 600px;
+        display: inline-block;
+        border-radius: 10px;
+        margin: 20px;
     }
 
     /*ACHIEVEMENTS CSS CODE*/
@@ -657,8 +760,13 @@ section {
     }
     .achievement-img{
         width: 60%; 
-        height: 25%;
-        padding-left: 15%;
+        height: 55%;
+    }
+    .achievement-container{
+        display: flex;
+    }
+    .achivement{
+        max-width: 680px;
     }
 
     /*CERTIFICATIONS CSS CODE*/
