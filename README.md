@@ -4,6 +4,7 @@ Hello there, welcome to my portfolio website. The building of the website is sti
 
 _Prerequisites_
 Python 3.x
+`npm install`
 
 ## Setup
 
