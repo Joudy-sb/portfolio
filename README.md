@@ -10,6 +10,7 @@ Python 3.x
 *Step 0:* Open the terminal
 
 *Step 1:* Clone the repository
+
 git clone https://github.com/Joudy-sb/portfolio.git
 
 *Step 2:* Create and activate a virtual environment (optional)
@@ -25,10 +26,12 @@ source venv/bin/activate
 
 *Step 3:* Install the dependencies
 Once the virtual environment is activated (if you're using one), install the required packages.
+
 pip install -r requirements.txt
 
 *Step 4:* Run the website
 After all dependencies are installed, you can run the app by executing the following command:
+
 python app.py
 
 The website will be available at http://127.0.0.1:5000/ by default.
