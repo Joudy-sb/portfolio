@@ -16,11 +16,11 @@ git clone https://github.com/Joudy-sb/portfolio.git
 *Step 2:* Create and activate a virtual environment (optional)
 To avoid conflicts with other Python projects, it's recommended to use a virtual environment.
 
-# For Windows
+### For Windows
 python -m venv venv
 venv\Scripts\activate
 
-# For macOS/Linux
+### For macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
 
