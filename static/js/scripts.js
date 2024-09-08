@@ -1,4 +1,4 @@
-var phrases = ["Machine Learner", "Softwar Engineer", "Data Scientist"];
+var phrases = ["Machine Learning Engineer", "Softwar Engineer", "Frontend Developer", "Mobile App Developer"];
 var i = 0;
 var j = 0;
 var currentPhrase = phrases[0];
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const softSkillsChart = new Chart(ctx, {
       type: 'pie',
       data: {
-          labels: ['Communication', 'Teamwork', 'Problem-solving', 'Time Management', 'Adaptability'],
+          labels: ['Time Management', 'Critical Thinking', 'Emotional Intelligence', 'Resiliense',  'Communication'],
           datasets: [{
               label: 'Soft Skills',
               data: [20, 25, 30, 15, 10], // Example data, change to your actual percentages

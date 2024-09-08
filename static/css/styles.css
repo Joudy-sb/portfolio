@@ -18,548 +18,13 @@ section {
     justify-content: center; 
     position: relative;
 }
+
 .title-sections{
-    font-size: 34px;
-    padding-top: 10%;
+    font-size: 42px;
+    padding-top: 3%;
 }
 
-/*WELCOME CSS CODE*/
-#welcome-section {
-    text-align: justify;
-    padding-left: 7%;
-}
-.welcome-container{
-    padding-top: 25%;
-}
-.welcome {
-    padding-top: 7%;
-    padding-left: 5%;
-    width: 500px;
-}
-.welcome-1 {
-    padding-top: 50px;
-    font-family: monospace;
-    font-size: 18px;
-    color: black;
-}
-.welcome-2 {
-    font-family: monospace;
-    font-size: 26px;
-    font-weight: bolder;
-    color: black;
-}
-.download-CV {
-    margin-top: 40px;
-    border-radius: 5px;
-    margin-left: 25%;
-    height: 35px;
-    width: 170px;
-    background-color: #aac7dd;
-}
-.textCV {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-}
-.portrait {
-    width: auto;
-    height: 250px; 
-    position: absolute;
-    bottom: 0; 
-    left: 44%; 
-    transform: translateX(-50%); 
-}    
-.grey-box {
-    width: 250px;
-    height: 250px;
-    background-color: #a9c4d8;
-    border: 3px solid #111; 
-    position: relative;
-    margin-left: 11%;
-    top: 0;
-    left: 0;
-    z-index: 0; 
-}
-
-/*NAV BAR CSS CODE*/
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #081821;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f0efeb;
-    display: block;
-    transition: 0.3s;
-}  
-.sidenav a:hover {
-    color: #f1f1f1;
-} 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-.nav-open{
-    font-size:25px;
-    cursor:pointer;
-}
-
-/*SKILLS CSS CODE*/
-#skills-section{
-    padding-left: 5%;
-}
-.skills-container {
-    display: inline-block;
-}
-.skills-type{
-    text-decoration: underline;
-    font-size: 22px;
-}
-.skill {
-    margin-bottom: 20px;
-    display: inline-block;
-    width: 40%;
-    padding-right:30px;
-}
-.skill-name {
-    font-size: 16px;
-}
-.skill-img{
-    width: 25px;
-    height: 25px; 
-    margin-right: 10px;
-}
-.progress-bar {
-    background: #cfd2d3;
-    position: relative;
-    overflow: hidden;
-    height: 3px;
-}
-.progress {
-    background: #0d2a39;
-    height: 5px;
-    width: 0;
-    transition: width 4.5s ease-in-out; 
-}
-.pie-chart-container {
-    max-width: 75%;
-    padding-left: 0px;
-}
-
-/*PROJECTS CSS CODE*/
-#project-section{
-    padding-left: 5%;
-}
-.project-name{
-    margin-top: 30px;
-    text-decoration: underline;
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 22px;
-}
-.project-desc{
-    font-size: 15px;
-    width: 90%;
-    text-align: justify;
-}
-.project-link{
-    color: #111;
-    text-decoration: none;
-    font-size: 13px;
-}
-.project-btn{
-    border-radius: 5px;
-    margin-left: 50%;
-    height: 25px;
-    width: 140px;
-    background-color: #a9c4d8;
-}
-#project-container{
-    padding-left:20px;
-    padding-bottom:20px;
-    background-color: #a9c4d84a;
-    max-width: 300px;
-    display: inline-block;
-    border-radius: 10px;
-    margin: 10px;
-    margin-left: 5%;
-}
-
-/*ACHIEVEMENTS CSS CODE*/
-#achievement-section{
-    padding-left: 5%;
-}
-.achievement-name{
-    text-decoration: underline;
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 22px;
-}
-.achievement-desc{
-    font-size: 17px;
-    width: 90%;
-    text-align: justify;
-}
-.achievement-img{
-    width: 60%; 
-    height: 21%;
-    padding-left: 15%;
-}
-
-/*CERTIFICATIONS CSS CODE*/
-.mySlides {
-    display: none;
-}
-.mySlides:first-of-type {
-    display: block;
-}
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.carousel-img{
-    width:100%;
-    height:280px;
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media screen and (min-width: 450px) {
-    .title-sections{
-        font-size: 42px;
-        padding-top: 7%;
-    }
-    /*WELCOME CSS CODE*/
-    #welcome-section {
-        text-align: justify;
-        padding-left: 7%;
-    }
-    .welcome-container{
-        padding-top: 10%;
-    }
-    .welcome {
-        padding-top: 7%;
-        padding-left: 5%;
-        width: 500px;
-    }
-    .welcome-1 {
-        font-family: monospace;
-        font-size: 28px;
-        color: black;
-    }
-    .welcome-2 {
-        font-family: monospace;
-        font-size: 36px;
-        font-weight: bolder;
-        color: black;
-    }
-    .download-CV {
-        margin-top: 40px;
-        border-radius: 5px;
-        margin-left: 85%;
-        height: 40px;
-        width: 200px;
-        background-color: #aac7dd;
-    }
-    .textCV {
-        text-decoration: none;
-        font-size: 18px;
-        color: black;
-        font-weight: bold;
-    }
-    .portrait {
-        width: auto;
-        height: 400px;
-        position: absolute;
-        bottom: 0; 
-        left: 44%; 
-        transform: translateX(-50%);
-        z-index: 1;
-    }    
-    .grey-box {
-        width: 450px;
-        height: 450px;
-        background-color: #a9c4d8;
-        border: 3px solid #111; 
-        position: relative;
-        margin-left: 14%;
-        top: 0;
-        left: 0;
-        z-index: 0; 
-    }
-
-    /*NAV BAR CSS CODE*/
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #081821;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #f0efeb;
-        display: block;
-        transition: 0.3s;
-    }  
-    .sidenav a:hover {
-        color: #f1f1f1;
-    } 
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-    .nav-open{
-        font-size:35px;
-        cursor:pointer;
-    }
-
-    /*SKILLS CSS CODE*/
-    #skills-section{
-        padding-left: 5%;
-    }
-    .skills-container {
-        display: inline-block;
-    }
-    .skills-type{
-        text-decoration: underline;
-        font-size: 26px;
-        margin-bottom: 35px;
-    }
-    .skill {
-        margin-bottom: 20px;
-        display: inline-block;
-        width: 40%;
-        padding-right:30px;
-    }
-    .skill-name {
-        font-size: 20px;
-    }
-    .skill-img{
-        width: 25px;
-        height: 25px; 
-        margin-right: 10px;
-    }
-    .progress-bar {
-        background: #cfd2d3;
-        position: relative;
-        overflow: hidden;
-        height: 3px;
-    }
-    .progress {
-        background: #0d2a39;
-        height: 5px;
-        width: 0;
-        transition: width 4.5s ease-in-out; 
-    }
-    .pie-chart-container {
-        max-width: 52.5%;
-        padding-left: 0px;
-    }
-
-    /*PROJECTS CSS CODE*/
-    #project-section{
-        padding-left: 5%;
-    }
-    .project-name{
-        margin-top: 30px;
-        text-decoration: underline;
-        font-weight: lighter;
-        font-style: italic;
-        font-size: 26px;
-    }
-    .project-desc{
-        font-size: 20px;
-        width: 90%;
-        text-align: justify;
-    }
-    .project-link{
-        color: #111;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    .project-btn{
-        border-radius: 5px;
-        margin-left: 60%;
-        height: 30px;
-        width: 170px;
-        background-color: #a9c4d8;
-    }
-    #project-container{
-        padding-left:20px;
-        padding-bottom:20px;
-        background-color: #a9c4d84a;
-        max-width: 500px;
-        display: inline-block;
-        border-radius: 10px;
-        margin: 20px;
-        margin-left: 10%;
-    }
-
-    /*ACHIEVEMENTS CSS CODE*/
-    #achievement-section{
-        padding-left: 5%;
-    }
-    .achievement-name{
-        text-decoration: underline;
-        font-weight: lighter;
-        font-style: italic;
-        font-size: 30px;
-    }
-    .achievement-desc{
-        font-size: 20px;
-        width: 90%;
-        text-align: justify;
-    }
-    .achievement-img{
-        width: 50%; 
-        height: 20%;
-        padding-left: 20%;
-    }
-
-    /*CERTIFICATIONS CSS CODE*/
-    .mySlides {
-        display: none;
-    }
-    .mySlides:first-of-type {
-        display: block;
-    }
-    .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    }
-    .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    }
-    .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    }
-    .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    }
-    .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    }
-    .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    }
-    .active, .dot:hover {
-    background-color: #717171;
-    }
-    .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-    }
-    .carousel-img{
-        width:100%;
-        height:480px;
-    }
-    @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-    }
-}
-@media screen and (min-width: 1200px) {
-    .title-sections{
-        font-size: 42px;
-        padding-top: 3%;
-    }
+/*LAPTOP SCREEN*/
     /*WELCOME CSS CODE*/
     #welcome-section {
         text-align: justify;
@@ -572,7 +37,7 @@ section {
     .welcome {
         padding-top: 7%;
         padding-left: 10%;
-        width: 500px;
+        width: 1000px;
     }
     .welcome-1 {
         font-family: monospace;
@@ -588,7 +53,7 @@ section {
     .download-CV {
         margin-top: 75px;
         border-radius: 5px;
-        margin-left: 85%;
+        margin-left: 50%;
         height: 40px;
         width: 200px;
         background-color: #aac7dd;
@@ -604,9 +69,8 @@ section {
         height: 400px; 
         position: absolute;
         bottom: 0; 
-        left: 65%;
+        left: 50%;
         transform: translateX(-50%); 
-        z-index: 1; 
     }    
     .grey-box {
         width: 450px;
@@ -754,19 +218,25 @@ section {
         font-size: 30px;
     }
     .achievement-desc{
-        font-size: 20px;
-        width: 90%;
+        font-size: 18px;
         text-align: justify;
     }
     .achievement-img{
         width: 60%; 
-        height: 55%;
+        height: 45%;
+        padding-left: 0px;
     }
     .achievement-container{
         display: flex;
     }
     .achivement{
-        max-width: 680px;
+        max-width: 500px;
+        margin: 30px;
+        padding-left:3%;
+        padding-right:3%;
+        padding-bottom:30px;
+        border-radius: 10px;
+        background-color: #a9c4d84a;
     }
 
     /*CERTIFICATIONS CSS CODE*/
@@ -777,7 +247,7 @@ section {
         display: block;
     }
     .slideshow-container {
-    max-width: 1000px;
+    max-width: 90%;
     position: relative;
     margin: auto;
     }
@@ -828,10 +298,6 @@ section {
     }
     .carousel-img{
         width:100%;
-        height:480px;
+        height:570px;
     }
-    @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-    }
-}
+
