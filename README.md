@@ -2,7 +2,7 @@
 
 Hello there, welcome to my portfolio website. The building of the website is still in progress but if you wish to see the current results, follow these steps:
 
-_Prerequisites_
+_Prerequisites_:
 Python 3.x
 
 ## Setup
