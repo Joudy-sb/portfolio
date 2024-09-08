@@ -36,6 +36,8 @@ After all dependencies are installed, you can run the app by executing the follo
 
 `python app.py`
 
-The website will be available at http://127.0.0.1:5000/ by default.
+The website will be available at http://127.0.0.1:5000/ by default. 
+
+P.S.: the website is not responsive yet and is only adaptable to laptops.
 
 ## ENJOYYY :))
