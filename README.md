@@ -2,23 +2,17 @@
 
 Hello there, welcome to my portfolio website. The building of the website is still in progress but if you wish to see the current results, follow these steps:
 
-
-Note: This is a Python-based website that you can run locally using Flask.
-
-Requirements
-Before running the project, make sure you have all the necessary dependencies installed. The dependencies are listed in the requirements.txt file.
-
-Prerequisites
+_Prerequisites_
 Python 3.x
 
-Setup
+## Setup
 
-Step 0: Open the terminal
+*Step 0:* Open the terminal
 
-Step 1: Clone the repository
+*Step 1:* Clone the repository
 git clone https://github.com/Joudy-sb/portfolio.git
 
-Step 2: Create and activate a virtual environment (optional)
+*Step 2:* Create and activate a virtual environment (optional)
 To avoid conflicts with other Python projects, it's recommended to use a virtual environment.
 
 # For Windows
@@ -29,16 +23,14 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 
-Step 3: Install the dependencies
+*Step 3:* Install the dependencies
 Once the virtual environment is activated (if you're using one), install the required packages.
-
 pip install -r requirements.txt
 
-Step 4: Run the website
+*Step 4:* Run the website
 After all dependencies are installed, you can run the app by executing the following command:
-
 python app.py
 
 The website will be available at http://127.0.0.1:5000/ by default.
 
-ENJOYYY :))
+## ENJOYYY :))
