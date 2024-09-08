@@ -18,10 +18,12 @@ To avoid conflicts with other Python projects, it's recommended to use a virtual
 
 ### For Windows
 `python -m venv venv`
+
 `venv\Scripts\activate`
 
 ### For macOS/Linux
 `python3 -m venv venv`
+
 `source venv/bin/activate`
 
 *Step 3:* Install the dependencies
